@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Endless Runner+ (WASD)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="hud-left">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="highscore">Best: <span id="high">0</span></div>
+    </div>
+    <div class="hud-right">
+      <button id="btnPause" title="P">⏸️</button>
+      <button id="btnMute" title="M">🔇</button>
+      <button id="btnRestart" title="R">🔁</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay show">
+    <div class="panel">
+      <h1>Endless Runner+</h1>
+      <p>Controls: <strong>W</strong> jump, <strong>S</strong> slide, <strong>A/D</strong> move, <strong>P</strong> pause, <strong>M</strong> mute, <strong>R</strong> restart.</p>
+      <p>Collect <span style="color:#f1c40f">coins</span> & <span style="color:#2ecc71">power‑ups</span>. Avoid <span style="color:#e74c3c">obstacles</span>.</p>
+      <button id="btnStart">Start</button>
+    </div>
+  </div>
+
+  <canvas id="game" width="960" height="540"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
